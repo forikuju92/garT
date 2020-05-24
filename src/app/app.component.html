@@ -14,25 +14,25 @@
           <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" style="float:right!important;">
               <ul class="navbar-nav flex-grow-1">
                   <li class="nav-item">
-                      <a class="nav-link text-dark" href="#/!">Home</a>
+                      <a class="nav-link text-dark" routerLink="/Home">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link text-dark" href="#!About">Who we are</a>
+                      <a class="nav-link text-dark" routerLink="/about-us">Who we are</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link text-dark" href="#!Product">Products</a>
+                      <a class="nav-link text-dark" routerLink="/Products">Products</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link text-dark" href="#!Service">Services</a>
+                      <a class="nav-link text-dark" routerLink="/Services">Services</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link text-dark" href="#!Contact">Contact</a>
+                      <a class="nav-link text-dark" routerLink="/Contacts">Contact</a>
                   </li>
               </ul>
           </div>
       </div>
   </nav>
 </header>
-<div class="container-fluid mContent" ng-view ng-animate="{enter:'fade-enter'}">
-
+<div class="container-fluid mContent">
+<router-outlet></router-outlet>
 </div>
