@@ -1,38 +1,7 @@
-<header>
-  <div class="container-fluid">
-      <a class="navbar-brand" href="#/!">
-          <img src="assets/Images/logo.JPG" class="logo">
-      </a>
+<app-nav></app-nav>
 
-  </div>
-  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow">
-          <div class="container-fluid nlinks">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" style="float:right!important;">
-              <ul class="navbar-nav flex-grow-1">
-                  <li class="nav-item">
-                      <a class="nav-link text-dark" routerLink="/Home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-dark" routerLink="/about-us">Who we are</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-dark" routerLink="/Products">Products</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-dark" routerLink="/Services">Services</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-dark" routerLink="/Contacts">Contact</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-</header>
 <div class="container-fluid mContent">
 <router-outlet></router-outlet>
 </div>
+
+<app-app-footer></app-app-footer>

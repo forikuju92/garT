@@ -9,6 +9,9 @@ import { GProductsComponent } from './gproducts/gproducts.component';
 import { GContactsComponent } from './gcontacts/gcontacts.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HomeComponent } from './home/home.component';
+import { AppPageHomeComponent } from './app-page-home/app-page-home.component';
+import { NavComponent } from './nav/nav.component';
+import { AppFooterComponent } from './app-footer/app-footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { HomeComponent } from './home/home.component';
     GProductsComponent,
     GContactsComponent,
     AboutUsComponent,
-    HomeComponent
+    HomeComponent,
+    AppPageHomeComponent,
+    NavComponent,
+    AppFooterComponent
   ],
   imports: [
     BrowserModule,
