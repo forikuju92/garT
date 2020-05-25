@@ -8,6 +8,7 @@ import { GServicesComponent } from './gservices/gservices.component';
 import { GProductsComponent } from './gproducts/gproducts.component';
 import { GContactsComponent } from './gcontacts/gcontacts.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     GServicesComponent,
     GProductsComponent,
     GContactsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
