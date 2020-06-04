@@ -8,11 +8,11 @@ body {
 img.logo {
   width: 100px;
   height: auto;
-  padding-left: 10px;
+  margin: 15px;
 }
 nav.navbar {
   background-color: #636EA6;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.7);
+  box-shadow: 2px 8px 5px 0 rgba(0,0,0,0.7);
 }
 a.nav-link {
   color: white !important;
@@ -43,7 +43,9 @@ img.homeImg {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-color: #d8d8d8;
+  background-color: white;
+  border-top: solid 5px #70ad47;
+  border-bottom: solid;
 }
 .contentPurple {
   padding: 30px !important;
@@ -55,17 +57,74 @@ img.homeImg {
 .squarePic {
   width: 200px;
   height: 200px;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.12);
+  box-shadow: 2px 8px 5px 0 rgba(0,0,0,0.6);
+  border-left: solid 7px #bbb49f;
+  border-bottom: solid 5px #bbb49f;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin:25px 0;
 }
 .contentTransparent {
   padding: 30px !important;
 }
 .contentLined {
   padding: 30px !important;
+  margin-bottom: 50px;
   border-top: solid 3px #636ea6;
 }
 h4, h2 {
   margin: 20px 0;
+}
+h4{
+  color: white;
+}
+.footerImage{
+  width:50px;
+  margin: 0 15px;
+}
+a.noDecoration, .copyright {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+
+}
+
+/*About us CSS*/
+img.valuesImg {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: white;
+  border-top: solid 5px #70ad47;
+  border-bottom: solid red;
+}
+
+p.quotes {
+  font-size: 1.5rem;
+  font-style: oblique;
+  color: white;
+}
+
+img.carouselImg {
+  width: 200px;
+  height: 200px;
+}
+
+/*Product CSS*/
+img.productPic {
+  height: 250px;
+  width: 100%;
+}
+
+.pad-30{
+  padding:30px;
+}
+
+.productCard{
+  background-color: white;
+  min-height:450px;
+  border-bottom: solid 5px #636ea6;
+  box-shadow: 0 3px 3px 0 black;
 }
 /*
 .navbar {
