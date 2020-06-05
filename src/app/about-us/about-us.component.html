@@ -1,70 +1,112 @@
 <!--The container belows contains the header image/ carousel/gif for the page-->
-<section>
-  <img src="assets/Images/glassdoors.jpeg" class="logo">
-  <h1>WHO WE ARE</h1>
-</section>
+<div class="pageBanner" style="background: url(assets/Images/AboutBanner.png);">
+  <div class="container text-center">
+    <h1>Who we are</h1>
+  </div>
+</div>
 
 <!--Vision & Mission-->
-<section>
-  <h2>BACKGROUND</h2>
-  <p>GAR Technical system is a company that deals with super standard glass, aluminum and railings.
+<div class="container-fluid contentTransparent">
+  <h2>Background</h2>
+  <p style="font-size:1.5rem">GAR Technical system is a company that deals with super standard glass, aluminum and railings.
     We have over the years been working assiduously to give world class services to our numerous clients.
     With our manufacturing partners in Turkey.
     We deliver high quality services and goods the to maximum satisfaction of our clients.
   </p>
-</section>
+</div>
 
 <!--Vision Mission color bottom border of section green-->
-<section>
-  <table style="width:100%">
-    <tr>
-      <th>Our Vision</th>
-      <th>Our Mission</th>
-    </tr>
-    <tr>
-      <td>'Ensuring a difference to our buildings  through  new design and application of glass, aluminum and railing'</td>
-      <td>To be the global leader in innovative high performance in aluminum, railings, glass and glazing solutions, ensuring high quality products and services for  homes, hotels, offices that can stand the test of time.</td>
-    </tr>
-  </table>
-</section>
-
-<!--Values-->
-<section>
-  <h2>Our Values</h2>
-  <div>
-    <img src="assets/Images/Trust.png" class="Trust">
-    <p>Trust</p>
+<div class="container-fluid contentPurple">
+  <div class="row">
+    <div class="col-sm-6 centered" style="border-right:solid 3px #70ad47">
+      <h2>Our Vision</h2>
+      <p class="quotes">'Ensuring a difference to our buildings  through  new design and application of glass, aluminum and railing'</p>
+    </div>
+    <div class="col-sm-6 centered">
+      <h2>Our Mission</h2>
+      <p class="quotes">To be the global leader in innovative high performance in aluminum, railings, glass and glazing solutions, ensuring high quality products and services for  homes, hotels, offices that can stand the test of time.</p>
+    </div>
   </div>
-  <div>
-    <img src="assets/Images/Respect.png" class="Trust">
-    <p>Respect</p>
-  </div>
-  <div>
-    <img src="assets/Images/integrity.svg" class="Trust">
-    <p>Integrity</p>
-  </div>
-  <div>
-    <img src="assets/Images/Team.svg" class="Trust">
-    <p>Team Oriented</p>
-  </div>
-  <div>
-    <img src="assets/Images/creative.svg" class="Trust">
-    <p>Creative</p>
-  </div>
-  <div>
-    <img src="assets/Images/Resilience.svg" class="Trust">
-    <p>Resilience</p>
-  </div>
-</section>
+</div>
 
 <!--Gallery section should have all the images in the image folder as a carousel-->
-<section>
-  <div>
-    <img src="assets/Images/pygar.jpeg" class="logo">
-    <img src="assets/Images/merald.jpeg" class="logo">
-    <img src="assets/Images/smri.JPG" class="logo">
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner contentTransparent">
+    <div class="carousel-item active">
+      <div class="row">
+    		<div class="col-sm-2 centered">
+          <img src="assets/Images/bo.jpeg" class="carouselImg">
+        </div>
+        <div class="col-sm-2 centered">
+          <img src="assets/Images/corona.jpeg" class="carouselImg">
+        </div>
+        <div class="col-sm-2 centered">
+          <img src="assets/Images/glassdoors.jpeg" class="carouselImg">
+        </div>
+        <div class="col-sm-2 centered">
+          <img src="assets/Images/op.jpeg" class="carouselImg">
+        </div>
+        <div class="col-sm-2 centered">
+          <img src="assets/Images/o4.jpeg" class="carouselImg">
+        </div>
+    		<div class="col-sm-2 centered">
+          <img src="assets/Images/part.jpeg" class="carouselImg">
+        </div>
+  		</div>
+    </div>
   </div>
-</section>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+
+<!--Values-->
+<div class="container-fluid" style="background-color:black; padding:30px !important">
+   	  <div class="row">
+    		<div class="col-sm-2 centered">
+          <img src="assets/Images/trust.png" class="valuesImg">
+          <h4>Trust</h4>
+        </div>
+        <div class="col-sm-2 centered">
+          <img src="assets/Images/Respect.png" class="valuesImg">
+          <h4>Respect</h4>
+        </div>
+        <div class="col-sm-2 centered">
+          <img src="assets/Images/integrity.svg" class="valuesImg">
+          <h4>Integrity</h4>
+        </div>
+        <div class="col-sm-2 centered">
+          <img src="assets/Images/Team.svg" class="valuesImg">
+          <h4>Team</h4>
+        </div>
+        <div class="col-sm-2 centered">
+          <img src="assets/Images/creative.svg" class="valuesImg">
+          <h4>Creative</h4>
+        </div>
+    		<div class="col-sm-2 centered">
+          <img src="assets/Images/Resilience.svg" class="valuesImg">
+          <h4>Resilience</h4>
+        </div>
+  		</div>
+</div>
+
+
+
 
 
 
