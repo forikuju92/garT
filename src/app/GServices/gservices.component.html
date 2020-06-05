@@ -30,9 +30,95 @@
     </div>
   </div>
   <div class="centered pad-30">
-      <h2><a href="#" class="">Request a service</a></h2>
+      <h2><a href="#" class="productQuote" style="color:#636ea6!important;" data-toggle="modal" data-target="#serviceModal">Request a service</a></h2>
   </div>
+  
 </div>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="serviceModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="">Request for a Service</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="container pad-30">
+          <div class="row">
+              <form action=" " method="post">
+                <div class="row pad-sm">
+                  <div class="col-sm-3">
+                    <label for="fname">Name:</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="text" id="fname">
+                  </div>
+                </div>
+        
+                <div class="row pad-sm">
+                  <div class="col-sm-3">
+                    <label for="Cname">Company:</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="text" id="Cname">
+                  </div>
+                </div>
+        
+                <div class="row pad-sm">
+                  <div class="col-sm-3">
+                    <label for="cMail">Email:</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="text" id="cMail">
+                  </div>
+                </div>
+        
+                <div class="row pad-sm">
+                  <div class="col-sm-3">
+                    <label for="cNumber">Contact Number:</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="text" id="cNumber">
+                  </div>
+                </div>
+        
+                <div class="row pad-sm">
+                  <div class="col-sm-3">
+                    <label for="rType">Request Type:</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="text" id="rType">
+                  </div>
+                </div>
+        
+                <div class="row pad-sm">
+                  <div class="col-sm-3">
+                    <label for="rSumm">Request Summary:</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <textarea name="rSumm" rows="10" cols="60"></textarea>
+                  </div>
+                </div>
+        
+                <div class="centered pad-30">
+                  <input type="submit" value="Submit">
+                </div>
+              </form>
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 
 
 
