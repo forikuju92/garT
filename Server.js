@@ -19,8 +19,9 @@ const sendMail = (user, callback) => {
   });
 }
 
+const newLocal = `"<Sender’s name>", "<Sender’s email>"`;
 const mailOptions = {
-  from: `"<Sender’s name>", "<Sender’s email>"`,
+  from: znewLocal,
   to: `<${user.email}>`,
   subject: "<Message subject>",
   html: "<h1>And here is the place for HTML</h1>"
