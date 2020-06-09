@@ -66,10 +66,22 @@ img.homeImg {
   border-top: solid 5px #70ad47;
   border-bottom: solid grey;
 }
-h2.mainHeader, .footerNotes {
+.mar-lg{
+  margin:50px 0;
+}
+.OurOffers{
+  color: white;
+  margin-top: 25px;
+  font-size: 1.2rem;
+}
+h2.mainHeader {
   color: #9bfd59;
   font-weight: 500;
 }
+.footerNotes {
+  color: white;
+}
+
 .contentPurple {
   padding: 30px !important;
   background-color: #636ea6;
@@ -97,8 +109,13 @@ h2.mainHeader, .footerNotes {
 h4, h2 {
   margin: 20px 0;
 }
+
 h4{
   color: white;
+}
+h4.footerHeaders{
+  color: #9bfd59 !important;
+  font-weight: 500;
 }
 
 .bgDullGreen {
