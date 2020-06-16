@@ -7,6 +7,7 @@ const nodemailer = require("nodemailer");
 // create a new Express application instance
 const app = express();
 
+<<<<<<< HEAD
 const sendMail = (user, callback) => {
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -29,6 +30,8 @@ const mailOptions = {
 
 transporter.sendMail(mailOptions, callback);
 
+=======
+>>>>>>> garFunmi
 //configure the Express middleware to accept CORS requests and parse request body into JSON
 app.use(ra ({origin: "*" }));
 app.use(bodyParser.json());
