@@ -12,10 +12,13 @@ img.logo {
   position: absolute;
 }
 .stickyNav {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   width: 100%;
-
+  background-color: #636ea6;
+  border-bottom: rgba(112, 173, 71, 0.47) solid 2px;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 ul.navbar-nav{
@@ -26,9 +29,10 @@ ul.navbar-nav{
 
 app-nav {
   position: absolute;
-  width: 90%;
-  margin-left: 5% !important;
-  margin-right: 5%;
+  width: 100%;
+  padding-left: 5% !important;
+  padding-right: 5%;
+  height: auto;
 }
 
 a.nav-link {
@@ -47,10 +51,12 @@ a.nav-link {
 }
 .pageBanner {
   width: 100%;
-  min-height: 450px;
+  min-height: 700px;
   padding-top: 180px;
   text-align: center;
   background-color: #636EA6;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 h1 {
   font-size: 4rem;
@@ -60,13 +66,13 @@ h1 {
 }
 h2.tagline {
   text-align: center;
-  padding: 20px;
+  /*padding: 20px;*/
   font-style: oblique;
   font-weight:500;
 }
 img.homeImg {
-  height: 200px;
-  width: 200px;
+  height: 70%;
+  width: 70%;
   border-radius: 50%;
   background-color: white;
   border-top: solid 5px #70ad47;
@@ -270,9 +276,12 @@ input[type="submit"] {
 .fa {
   padding-right: 10px;
 }
+.navbar {
+padding: 0;
+}
 /*
 .navbar {
-  /*background-color: #a6d678;
+  background-color: #a6d678;
   background-color: rgba(166, 214, 120, 0.84);
   color: white;
 }

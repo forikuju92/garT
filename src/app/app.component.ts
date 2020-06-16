@@ -15,14 +15,14 @@ export class AppComponent {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     // Get the navbar
-const navbar: HTMLElement = document.getElementById('navbar');
+const navbar: HTMLElement = document.getElementById('nLinks');
 
 // Get the offset position of the navbar
 const sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 
-if (window.pageYOffset >= sticky) {
+if (window.pageYOffset > sticky) {
     navbar.classList.add('stickyNav');
   } else {
     navbar.classList.remove('stickyNav');
