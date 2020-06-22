@@ -1,19 +1,31 @@
 //import modules installed at the previous step. We need them to run Node.js server and send emails
 const express = require("express");
+// create a new Express application instance
+const app = express();
 var path = require('path');
+const port = process.env.PORT || 3000;
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const server = require('http').Server(app);
 
-// create a new Express application instance
-const app = express();
+app.use(express.static(__dirname, 'dist', {index: false})); // set static files location, in this case the route, add a file name if not
 
-app.get('/', function (req, res) {
-	res.sendFile(path.join(__dirname, 'index.html'));
+server.listen(port, function() {
+  console.log("App running on port " + port);
+})
+
+// app.listen(process.env.PORT || 3000);
+
+app.get('', function(req, res) {
+  res.sendFile(path.join(__dirname, 'src', 'index.html'));
 });
 
-app.use(express.static(__dirname)); // set static files location, in this case the route, add a file name if not
-app.listen(process.env.PORT || 3000);
+app.get('/', function (req, res) {
+	res.sendFile(path.join(__dirname, 'src', 'index.html'));
+});
+
+
 
 const sendMail = (user, callback) => {
   const transporter = nodemailer.createTransport({
