@@ -3,7 +3,7 @@ const express = require("express");
 // create a new Express application instance
 const app = express();
 var path = require('path');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
