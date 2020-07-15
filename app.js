@@ -42,7 +42,7 @@ const sendMail = (user, callback) => {
 const newLocal = `"<Sender’s name>", "<Sender’s email>"`;
 const mailOptions = {
   from: znewLocal,
-  to: `<${user.email}>`,
+  to: '<${user.email}>',
   subject: "<Message subject>",
   html: "<h1>And here is the place for HTML</h1>"
 };
@@ -55,7 +55,7 @@ app.use(ra ({origin: "*" }));
 app.use(bodyParser.json());
 
 //start application server on port 3000
-app.listen(3000, () => {
+app.listen(8080, () => {
   console.log("The server started on port 3000");
 });
 
